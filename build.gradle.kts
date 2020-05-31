@@ -23,6 +23,14 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
+
+	// postgres driver
+	runtimeOnly("org.postgresql:postgresql")
+
+	// JDBC
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc") {
+		exclude(module = "spring-boot-starter-tomcat")
+	}
 }
 
 tasks.withType<Test> {
