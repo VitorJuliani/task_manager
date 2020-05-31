@@ -31,6 +31,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc") {
 		exclude(module = "spring-boot-starter-tomcat")
 	}
+
+	// Flyway
+	implementation("org.flywaydb:flyway-core")
 }
 
 tasks.withType<Test> {
