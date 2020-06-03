@@ -3,6 +3,6 @@ CREATE TABLE IF NOT EXISTS users (
     username VARCHAR NOT NULL,
     email VARCHAR NOT NULL,
     password VARCHAR NOT NULL,
-    photo VARCHAR NOT NULL,
-    role BOOLEAN NOT NULL
+    enabled BOOLEAN NOT NULL,
+    photo VARCHAR NOT NULL
 )
